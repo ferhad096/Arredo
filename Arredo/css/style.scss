@@ -12,6 +12,7 @@ li{
     position: fixed;
     width: 100%;
     z-index: 99999;
+    display: none;
     .logo{
         cursor: pointer;
         img{
@@ -132,7 +133,6 @@ li{
     width: 100%;
     background-color: #fff;
     padding: 1rem 0;
-    display: none;
     margin: 0;
     .left{
         i{
@@ -671,13 +671,18 @@ li{
     }
 }
 
-@media (max-width:576px){
-    #mob{
+
+
+@media(min-width: 992px){
+    #nav{
         display: block;
     }
-    #nav{
+    #mob{
         display: none;
     }
+}
+
+@media (max-width:576px){
     #header{
         h1{
             font-size: 52px;
